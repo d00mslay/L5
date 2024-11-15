@@ -1,0 +1,135 @@
+body {
+    font-family: Georgia;
+    background-color: #d2fba9;
+    padding: 20px;
+    }
+     
+h1{
+    font-size: 20px;
+    color: #24311d;
+    padding: 10px 10px;
+}
+h2{
+    font-size: 16px;
+    color: #265a2a;
+    padding: 10px 10px;
+}
+a{padding: 10px 10px; color: #265a2a;}
+.content {
+    display: flex;
+}
+
+.content-left {
+    width: 60%;
+    background-color: #86c068;
+    margin: 1%;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.content-right {
+    width: 500px;
+    background-color: #86c068; 
+    margin: 3%;
+    padding: 20px;
+    border-radius: 5%;
+    
+}
+img{border-radius: 5%; width:500px;}
+.header{font-size: 15px;
+    color: #4B0082;
+    padding: 10px 10px;}
+.container {
+    background-color: rgb(234, 173, 173);      
+    padding: 20px; 
+}
+
+.block {
+    width: 200px; 
+    height: 200px;
+    background-color: rgb(193, 214, 191); 
+    margin:  auto; 
+}
+
+
+.container-2 {
+    background-color: rgb(194, 223, 232); 
+    height: 400px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.block-2 {
+    width: 200px; 
+    height: 200px; 
+    background-color: rgb(153, 184, 148);     
+}
+.container-3 {
+    background-color: rgb(209, 209, 152); 
+    border: 2px solid black; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding: 10px; 
+}
+
+
+.block-3 {
+    width: 200px; 
+    height: 200px; 
+    background-color: rgb(202, 88, 143);
+    margin-bottom: 10px;    
+}
+.box1 {
+    position: relative; 
+    top: 20px; 
+    left: 20px; 
+    width: 150px; 
+    height: 150px; 
+    border: 3px solid green;
+}
+
+.box2 {
+    position: relative;   
+    top:-50px;
+    left: 100px; 
+    width: 150px; 
+    height: 150px; 
+    border: 3px solid red;
+}
+.box4 {
+    position: relative;   
+    top:-120px;
+    left: 180px; 
+    width: 150px; 
+    height: 150px; 
+    border: 3px solid blue;
+}
+
+.box3 {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px;     
+    border-radius: 10px;
+}
+.box3 img {
+    width: 100px; 
+    height: 100px; 
+    
+}
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+th {
+    background-color: green;
+    color: white;
+}
+

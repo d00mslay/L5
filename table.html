@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Лабораторная работа 4</title>
+        <link rel = "stylesheet" href = "style.css"/>
+    </head>
+            <body>  
+                <a href="main.html"> Основная страница</a>
+    <h1>Таблица о студентах</h1>
+    <table id = "myTable">
+        <caption>Список</caption>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>ФИО</th>                
+                <th>Форма поступления</th>
+                <th>Номер зачётной книжки</th>
+                <th>Номер группы</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Сидоров Иван Владиморович</td>
+                <td>Очная</td>                
+                <td>11111</td>                
+                <td>6101</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Петров Иван Васильевич</td>
+                <td>Заочная</td>                
+                <td>22222</td>                
+                <td>6102</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Васильев Николай Петрович</td>
+                <td>Очная</td>                
+                <td>33333</td>                
+                <td>6203</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Сазонов Алексей Николаевич</td>
+                <td>Очная</td>                
+                <td>44444</td>                
+                <td>6304</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Иванов Никита Валерьевич</td>
+                <td>Заочная</td>                
+                <td>55555</td>                
+                <td>6204</td>
+            </tr>
+                    
+             
+            <div class="form">
+                <br>
+                <br>
+                <h2>Добавить информацию о студенте</h2>
+                <form id="myForm">
+                      
+                    <label for="number">Номер:</label>
+                    <br>
+                    <input type="text" id="number">
+                    <br>
+
+                    <label for="fullname">ФИО:</label>
+                    <br>
+                    <input type="text" id="fullname">
+                    <br>  
+
+                    <label for="form">Номер группы:</label>
+                    <br>
+                    <input type="text" id="form">
+                    <br>    
+
+                    <label for="booknumber">Возраст:</label>
+                    <br>
+                    <input type="text" id="booknumber">
+                    <br>
+
+                    <label for="groupnumber">Направление:</label>
+                    <br>
+                    <input type="text" id="groupnumber">
+                    <br>
+                    <br>
+                    <input type="submit" value="Добавить">
+                </form>
+            </div>
+        </div>
+</body>
+    
+    
+    <script>
+        document.getElementById("myForm").onsubmit = function(event) {
+          event.preventDefault();
+          
+          var table = document.getElementById("myTable");
+          var row = table.insertRow(-1);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+          var cell4 = row.insertCell(3);
+          var cell5 = row.insertCell(4);
+          cell1.innerHTML = document.getElementById("number").value;
+          cell2.innerHTML = document.getElementById("fullname").value; 
+          cell3.innerHTML = document.getElementById("form").value;
+          cell4.innerHTML = document.getElementById("booknumber").value;
+          cell5.innerHTML = document.getElementById("groupnumber").value;
+          document.getElementById('myForm').reset();
+        };
+    </script> 
+         
+</html>
